@@ -6,6 +6,7 @@ const clearFields = () => {
   document.querySelector('#forecast').textContent = ''
   document.querySelector('#rain').textContent = ''
   document.querySelector('.searchMessage').textContent = ''
+  document.querySelector('#min-max').textContent = ''
 }
 
 const weatherForm = document.querySelector('form')
@@ -25,11 +26,12 @@ weatherForm.addEventListener('submit', (e) => {
         return document.querySelector('.searchMessage').textContent = data.error
       }
 
-      const { location, temperature, rain, forecast} = data
+      const { location, temperature, rain, forecast, min, max} = data
       document.querySelector('#location').textContent = location
       document.querySelector('#temperature').textContent = `${temperature} C`
       document.querySelector('#forecast').textContent = forecast
       document.querySelector('#rain').textContent = rain
+      document.querySelector('#min-max').textContent = `Max temperature today is ${max}, min temperature today is ${min}`
       search.value = ''
     })
   })
