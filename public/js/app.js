@@ -35,6 +35,8 @@ weatherForm.addEventListener('submit', (e) => {
   })
 })
 
+//testing git
+
 search.addEventListener('keydown', () => {
   clearFields()
 })
