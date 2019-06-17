@@ -1,0 +1,81 @@
+h1, h3, a {
+  color: #64AFE1;
+}
+
+img {
+  width: 200px;
+  align-self: center;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header a {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+header a:hover {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+header h1 {
+  margin-bottom: 2rem;
+}
+
+footer {
+  border-top: 1px solid #e164af;
+  padding: 1rem;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+footer p {
+  color: #e164af;
+}
+
+.weather-form {
+  margin-bottom: 2rem;
+}
+
+.weather-form input {
+  font-size: 14px;
+  min-width: 15rem;
+  color: #7a7a99;
+  border-radius: 0.2rem;
+  border: 1px solid #7a7a99;
+  padding: 0.5rem;
+}
+
+.weather-form button {
+  font-size: 14px;
+  min-width: 5rem;
+  background-color: #64AFE1;
+  color: #ffffff;
+  border: 1px solid #64AFE1;;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+.weather-form input:-internal-autofill-selected {
+  background: none;
+}
+
+.searchMessage {
+  font-size: 18px;
+  color: #e164af;
+}
